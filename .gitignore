@@ -132,3 +132,5 @@ dmypy.json
 
 *.zip
 ngrok
+flask/*.rdb
+.vscode
