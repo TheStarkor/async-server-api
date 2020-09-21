@@ -1,8 +1,4 @@
-wget http://download.redis.io/redis-stable.tar.gz
-tar xvzf redis-stable.tar.gz
-cd redis-stable
-make
-sudo make install
-sudo apt-get install apache2
-sudo apt-get install libapache2-mod-wsgi-py3
-sudo a2enmod wsgi
+redis-server --daemonize yes
+conda activate flask
+pm2 start run_model_server.py --interpreter ~/anaconda3/envs/flask/bin/python
+pm2 start run_web_server.py --interpreter ~/anaconda3/envs/flask/bin/python

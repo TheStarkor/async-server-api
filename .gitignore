@@ -134,3 +134,6 @@ dmypy.json
 ngrok
 flask/*.rdb
 .vscode
+*.rdb
+apache/*.rdb
+apache/redis-stable/

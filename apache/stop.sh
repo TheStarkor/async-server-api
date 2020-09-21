@@ -1,0 +1,2 @@
+pm2 delete run_model_server run_web_server
+redis-cli shutdown
